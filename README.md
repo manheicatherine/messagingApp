@@ -14,13 +14,16 @@ Update user account with new username and avatar icon
 Sign in and sign out
 
 ## Getting Started
-To get started with GYMMER, you're welcome to clone this repository, download the essential dependencies and run "npx expo start"
+To get started with GYMMER, you're welcome to clone this repository, download the essential dependencies and run "npx expo start".
 
 ##  Built with
-React Native, Firebase, GiftedChat, Google Maps, Node.js, Expo, Xcode
-
-## Contributing
-If you would like to contribute to ***GYMMER***, please fork this repository and submit a pull request with your changes. You're welcome to contribute that improve the functionality and user experience of the app.
+React Native <br />
+Firebase <br />
+GiftedChat <br /> 
+Google Maps <br />
+Node.js <br />
+Expo <br />
+Xcode 
 
 ## Author
 
