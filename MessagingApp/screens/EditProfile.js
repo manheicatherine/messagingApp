@@ -48,13 +48,13 @@ export default function EditProfile() {
               setImage(url);
               blob.close();
               resolve(url);
-              alert("image successfully uploaded");
+              alert("Image successfully uploaded!");
             });
           }
         );
       };
       xhr.onerror = function () {
-        reject(new TypeError("Network request failed"));
+        reject(new TypeError("Network request failed!"));
       };
       xhr.responseType = "blob";
       xhr.open("GET", image, true);
