@@ -5,7 +5,7 @@ import { signOut } from "firebase/auth";
 import { auth } from "../firebase";
 import Footer from "./Footer";
 
-const HomeScreen = () => {
+const UserProfile = () => {
   const navigation = useNavigation();
   const handleSignOut = () => {
     signOut(auth)
@@ -52,7 +52,7 @@ const HomeScreen = () => {
   );
 };
 
-export default HomeScreen;
+export default UserProfile;
 
 const styles = StyleSheet.create({
   container: {

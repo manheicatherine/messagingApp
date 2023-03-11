@@ -46,7 +46,7 @@ const HomeScreen = () => {
 
   useEffect(() => {
     getGyms();
-  }, [updateVotes]);
+  }, [gymList]);
 
   const handleSignOut = () => {
     signOut(auth)
