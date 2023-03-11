@@ -149,11 +149,12 @@ const styles = StyleSheet.create({
   gymTitle: {
     fontSize: 22,
     fontWeight: "bold",
-    color: "#181821",
+    color: "#26354a",
     textShadowColor: "rgba(123, 142, 224, 0.9)",
-    textShadowOffset: { width: 1, height: 1 },
+    textShadowOffset: { width: 1, height: 2 },
     textShadowRadius: 3,
     paddingBottom: 10,
+    fontFamily: 'GillSans-Bold'
   },
   gymDetails: {
     fontSize: 16,
@@ -184,8 +185,8 @@ const styles = StyleSheet.create({
   },
   button: {
     backgroundColor: "#567dfc",
-    width: "30%",
-    padding: 10,
+    width: "20%",
+    padding: 8,
     borderRadius: 10,
     marginVertical: 10,
     alignItems: "center",
