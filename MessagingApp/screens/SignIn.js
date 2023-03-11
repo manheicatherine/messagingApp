@@ -10,15 +10,11 @@ import {
 import React, { useEffect, useState } from "react";
 import { useNavigation } from "@react-navigation/core";
 import {
-  getAuth,
   onAuthStateChanged,
   createUserWithEmailAndPassword,
   signInWithEmailAndPassword,
-  signInWithPopup,
-  GoogleAuthProvider,
 } from "firebase/auth";
-import { auth, database } from "../firebase";
-const provider = new GoogleAuthProvider();
+import { auth } from "../firebase";
 
 const SignIn = () => {
   const [email, setEmail] = useState("");
@@ -39,9 +35,8 @@ const SignIn = () => {
       .then((userCredential) => {
         // Signed in
         const user = userCredential.user;
-         alert("Registered");
+        alert("Registered");
         // ...
-       
       })
       .catch((error) => {
         const errorCode = error.code;
@@ -69,11 +64,11 @@ const SignIn = () => {
 
   return (
     <KeyboardAvoidingView style={styles.container} behavior="padding">
-      <Text style={styles.title}>GYMMER</Text>
-      {/* <Image
-        style={styles.logo}
-        source={require("../assets/BackToGymSWEAT.jpeg")}
-      /> */}
+      {/* <Text style={styles.title}>GYMMER</Text> */}
+      <Image
+        source={require("/Users/catherinelization/Desktop/CatherineRef/messagingApp/MessagingApp/assets/2.png")}
+        style={{ width: 350, height: 250, marginBottom: 30 }}
+      />
       <View style={styles.inputContainer}>
         <TextInput
           placeholder="Email"
@@ -123,12 +118,11 @@ const styles = StyleSheet.create({
   },
   inputContainer: {
     width: "80%",
-    marginTop: 30,
   },
   input: {
     backgroundColor: "white",
     paddingHorizontal: 15,
-    paddingVertical: 10,
+    paddingVertical: 15,
     borderRadius: 10,
     marginTop: 5,
   },
@@ -140,10 +134,11 @@ const styles = StyleSheet.create({
   },
   button: {
     backgroundColor: "#567dfc",
-    width: "100%",
-    padding: 15,
+    width: "70%",
+    padding: 10,
     borderRadius: 10,
     marginTop: 5,
+    alignItems: "center",
   },
   buttonText: {
     color: "white",
@@ -152,7 +147,7 @@ const styles = StyleSheet.create({
   },
   buttonOutline: {
     backgroundColor: "white",
-    width: "100%",
+    width: "70%",
     marginTop: 5,
     borderColor: "#668aff",
     borderWidth: 2,

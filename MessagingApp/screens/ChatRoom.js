@@ -1,13 +1,10 @@
 import {
   StyleSheet,
   Text,
-  View,
-  SafeAreaView,
   TouchableOpacity,
 } from "react-native";
 import React, {
   useState,
-  useEffect,
   useLayoutEffect,
   useCallback,
 } from "react";
@@ -17,10 +14,11 @@ import {
   orderBy,
   query,
   onSnapshot,
+  
 } from "firebase/firestore";
 import { GiftedChat, Bubble } from "react-native-gifted-chat";
 import { useNavigation } from "@react-navigation/core";
-import { signOut, getAuth } from "firebase/auth";
+import { signOut } from "firebase/auth";
 import { auth, database } from "../firebase";
 import Icon from "react-native-vector-icons/FontAwesome";
 

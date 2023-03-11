@@ -6,13 +6,12 @@ import {
   View,
   Button,
   Image,
-  Platform,
 } from "react-native";
-import React, { useState, useLayoutEffect } from "react";
+import React, { useState } from "react";
 import { useNavigation } from "@react-navigation/core";
 import { updateProfile, getAuth } from "firebase/auth";
 import * as ImagePicker from "expo-image-picker";
-import { getStorage, ref, uploadBytes } from "firebase/storage";
+
 import uuid from "react-native-uuid";
 import { firebase } from "../firebase";
 import "firebase/firestore";
@@ -24,10 +23,8 @@ import "@firebase/storage-compat";
 export default function EditProfile() {
   const [name, setName] = useState("");
   const [image, setImage] = useState(null);
-  const [uploading, setUploading] = useState(null);
   const navigation = useNavigation();
   const auth = getAuth();
-  const storage = getStorage();
 
   const handleUploadPhoto = () => {
     return new Promise((resolve, reject) => {
@@ -40,19 +37,14 @@ export default function EditProfile() {
 
         snapshot.on(
           firebase.storage.TaskEvent.STATE_CHANGED,
-          () => {
-            setUploading(true);
-          },
+          () => {},
           (error) => {
-            setUploading(false);
             console.log(error);
             blob.close();
             reject(new TypeError("Network request failed"));
           },
           () => {
             snapshot.snapshot.ref.getDownloadURL().then((url) => {
-              setUploading(false);
-              console.log("Download URL: ", url);
               setImage(url);
               blob.close();
               resolve(url);
@@ -71,7 +63,6 @@ export default function EditProfile() {
   };
 
   const pickImage = async () => {
-    // No permissions request is necessary for launching the image library
     let result = await ImagePicker.launchImageLibraryAsync({
       mediaTypes: ImagePicker.MediaTypeOptions.All,
       allowsEditing: true,
@@ -96,8 +87,7 @@ export default function EditProfile() {
           navigation.replace("User Profile");
         })
         .catch((error) => {
-          // An error occurred
-          // ...
+          alert("Upload user picture unsuccessfully");
         });
     }
   };
@@ -112,7 +102,7 @@ export default function EditProfile() {
         />
 
         <Button title="Pick an image from camera roll" onPress={pickImage} />
-        
+
         {image && (
           <Image source={{ uri: image }} style={{ width: 200, height: 200 }} />
         )}
@@ -133,7 +123,7 @@ export default function EditProfile() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    //   justifyContent: "center",
+    backgroundColor: "#272a36",
     alignItems: "center",
   },
   title: {

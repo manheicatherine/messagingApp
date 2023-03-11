@@ -7,8 +7,7 @@ import ChatRoom from "./screens/ChatRoom";
 import HomeScreen from "./screens/HomeScreen";
 import UserProfile from "./screens/UserProfile";
 import EditProfile from "./screens/EditProfile";
-import Map from "./screens/Map";
-import { registerRootComponent } from "expo";
+import Maps from "./screens/Map";
 
 const Stack = createNativeStackNavigator();
 export default function App() {
@@ -31,7 +30,7 @@ export default function App() {
         <Stack.Screen name="Chat Room" component={ChatRoom} />
         <Stack.Screen name="User Profile" component={UserProfile} />
         <Stack.Screen name="Edit Profile" component={EditProfile} />
-        <Stack.Screen name="Map" component={Map} />
+        <Stack.Screen name="Maps" component={Maps} />
       </Stack.Navigator>
     </NavigationContainer>
   );
