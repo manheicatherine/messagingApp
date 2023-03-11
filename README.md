@@ -17,7 +17,7 @@ Sign in and sign out
 ## Getting Started
 To get started with GYMMER, you're welcome to clone this repository, download the essential dependencies and run "npx expo start".
 
-##  Built with
+##  Built With
 React Native <br />
 Firebase <br />
 GiftedChat <br /> 
@@ -26,7 +26,7 @@ Node.js <br />
 Expo <br />
 Xcode 
 
-## Author
+## Created By
 [manheicatherine](https://github.com/manheicatherine)
 
 ## Demo Video
