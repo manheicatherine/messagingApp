@@ -26,6 +26,7 @@ Expo <br />
 Xcode 
 
 ## Author
+[manheicatherine](https://github.com/manheicatherine)
 
 ## Demo Video
 
