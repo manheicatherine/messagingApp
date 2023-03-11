@@ -1,4 +1,5 @@
 # GYMMER
+<img src="https://user-images.githubusercontent.com/113735691/224503556-d4835b0d-f760-4b53-ba81-a359e7941b51.png" width="150" height="150">
 
 ## Introduction
 ***GYMMER*** is a messaging app designed for gym enthusiasts to connect with one another and stay motivated on their fitness journey.
