@@ -27,7 +27,7 @@ Expo <br />
 Xcode 
 
 ## Created By
-[manheicatherine](https://github.com/manheicatherine)
+[Catherine Li](https://github.com/manheicatherine)
 
 ## Demo Video
 
