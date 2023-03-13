@@ -11,7 +11,6 @@ import React, { useState } from "react";
 import { useNavigation } from "@react-navigation/core";
 import { updateProfile, getAuth } from "firebase/auth";
 import * as ImagePicker from "expo-image-picker";
-
 import uuid from "react-native-uuid";
 import { firebase } from "../firebase";
 import "firebase/firestore";
