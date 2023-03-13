@@ -113,7 +113,7 @@ export default function EditProfile() {
           <Text style={styles.uploadButtonText}>Upload Picture</Text>
         </TouchableOpacity>
         <TouchableOpacity onPress={updateUserInfo} style={styles.button}>
-          <Text style={styles.buttonText}>Edit Profile</Text>
+          <Text style={styles.buttonText}>Submit</Text>
         </TouchableOpacity>
       </View>
     </View>

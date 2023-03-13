@@ -1,4 +1,4 @@
-import { StyleSheet, Text, TouchableOpacity, View, Image } from "react-native";
+import { StyleSheet, Text, TouchableOpacity, View, Image, Button } from "react-native";
 import React, { useLayoutEffect } from "react";
 import { useNavigation } from "@react-navigation/core";
 import { signOut } from "firebase/auth";
@@ -10,7 +10,7 @@ const UserProfile = () => {
   const handleSignOut = () => {
     signOut(auth)
       .then(() => {
-        navigation.navigate("SignIn");
+        navigation.replace("SignIn");
       })
       .catch((error) => {
         console.error(error);
