@@ -26,6 +26,7 @@ To get started with GYMMER, you're welcome to clone this repository, download th
 - Google Maps <br />
 - Node.js <br />
 - Expo <br />
+- Axios <br />
 - Xcode 
 
 ## Created By
