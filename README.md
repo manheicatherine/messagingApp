@@ -2,7 +2,7 @@
 <img src="https://user-images.githubusercontent.com/113735691/224503556-d4835b0d-f760-4b53-ba81-a359e7941b51.png" width="150" height="150">
 
 ## Demo Video
-[![Watch the video](https://i9.ytimg.com/vi_webp/8diHIuXG2tQ/mq1.webp?sqp=CKTG0aAG-oaymwEmCMACELQB8quKqQMa8AEB-AHgBIACgAqKAgwIABABGEMgUShyMA8=&rs=AOn4CLDbhHlvH37LQBZEVBoqAN58TAezdg)](https://youtu.be/8diHIuXG2tQ)
+https://youtu.be/8diHIuXG2tQ
 
 
 ## Introduction
